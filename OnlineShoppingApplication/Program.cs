@@ -264,8 +264,9 @@ namespace UI
         private static void GetDataToDelete()
         {
             Console.Clear();
-
-            Console.Write("\nEnter the Item to be removed: ");
+            
+            displayItems();
+            Console.Write("Enter the Item to be removed: ");
             string dataTobeDeleted = Console.ReadLine();
 
             if (DataLayer.DeleteDataInFile(dataTobeDeleted))
